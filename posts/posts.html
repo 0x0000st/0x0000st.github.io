@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>0x0000st // Posts</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+  </head>
+  <body>
+    <center>
+      <img style="width: 150px" src="../assets/imgs/sky.jpg">
+      <br>
+      <i>0x0000st // Posts</i>
+      <div id="denver-clock">
+        <b>Loading time...</b>
+      </div>
+      <script>
+        function updateClock() {
+            const denverTime = new Date().toLocaleString("en-US", {
+                timeZone: "America/Denver",
+                dateStyle: "full",
+                timeStyle: "medium"
+            });
+
+            document.getElementById("denver-clock").textContent = denverTime;
+        }
+
+        updateClock();
+
+        setInterval(updateClock, 1000);
+      </script>
+      <br>
+      <a href="peripherals.html">Peripherals</a>
+    </center>
+  </body>
+</html>
