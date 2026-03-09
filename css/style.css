@@ -77,9 +77,10 @@ main {
 }
 
 .list li {
-  word-break: break-word;
   position: relative;
   margin: 10px 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .list li::before {
@@ -112,7 +113,7 @@ main {
 
 .profile-box, .under-box {
   flex: 1 1 300px;
-  padding: 2rem;
+  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   animation: fadeIn 1s ease-in-out;
