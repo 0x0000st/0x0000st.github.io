@@ -23,6 +23,12 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+code {
+  display: block;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
